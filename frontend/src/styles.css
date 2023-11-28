@@ -1,0 +1,176 @@
+:root {
+  --primary-color: #dc8beb;
+  --secondary-color: #ff3fa4;
+  --tertiary-color: #ffc8c8;
+  --accent-color: #ff9b82;
+  --body-bg: #000;
+  --body-text: #fff;
+  --main-font-size: 3rem;
+  --accent-font-size: 2rem;
+  --box-padding: 1.563rem;
+  --box-width: 65px;
+  --img-filter: invert(1);
+  --gap: 1.25rem;
+}
+
+.light-mode {
+  --primary-color: #10f3dc;
+  --secondary-color: #40a0a8;
+  --tertiary-color: #354e69;
+  --accent-color: #553672;
+  --body-bg: #fff;
+  --body-text: #000;
+  --img-filter: initial;
+  --shadow-box: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body {
+  color: var(--body-text);
+  font-family: 'Satoshi', sans-serif;
+  background-color: var(--body-bg);
+  /* position: relative; */
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.cta-img-container {
+  margin-right: 40px;
+  margin-top: -20px;
+}
+
+.cta-img {
+  filter: var(--img-filter);
+  width: 100px;
+}
+
+.header-container {
+  text-align: center;
+  font-size: 48px;
+}
+
+.header-greeting {
+  text-align: center;
+  font-weight: lighter;
+  display: inline-block;
+}
+
+.date-container {
+  font-size: 48px;
+  text-align: center;
+}
+
+.time-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 100px;
+  font-size: var(--main-font-size);
+  gap: var(--gap);
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.box {
+  border-radius: 5px;
+  padding: var(--box-padding);
+  width: var(--box-width);
+  text-align: center;
+  box-shadow: var(--shadow-box);
+}
+
+.box-meridian {
+  font-size: var(--accent-font-size);
+  text-align: centr;
+}
+
+.toggle-button {
+  /* position: absolute;
+  right: 0px; */
+  padding: 10px 15px;
+  background-color: transparent;
+  border: none;
+}
+
+.fa-toggle-on {
+  padding-right: 10px;
+  color: var(--body-text);
+}
+
+.hour {
+  background: var(--primary-color);
+}
+
+.hour:hover {
+  color: var(--secondary-color);
+}
+
+.minutes {
+  background: var(--secondary-color);
+}
+
+.minutes:hover {
+  color: var(--primary-color);
+}
+
+.seconds {
+  background: var(--tertiary-color);
+}
+
+.seconds:hover {
+  color: var(--secondary-color);
+}
+
+.meridian-time {
+  background: var(--accent-color);
+}
+
+.meridian-time:hover {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .time-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .sm-scr-box-size {
+    width: 50px;
+    text-align: center;
+  }
+
+  .meridian-time {
+    font-size: 25px;
+  }
+
+  .cta-img {
+    width: 75px;
+  }
+
+  .date-container {
+    text-align: center;
+    top: 550px;
+    right: 0px;
+    left: 0px;
+    bottom: auto;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

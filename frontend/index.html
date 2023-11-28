@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c7b23fc763.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <title>Javascript Dates</title>
+  </head>
+  <body id="body">
+    <nav class="nav-wrapper">
+      <button id="toggle-button" class="toggle-button"><i class="fa-solid fa-toggle-on fa-2xl" aria-label="toggle-button"></i></button>
+      <div class="cta-img-container">
+        <img class="cta-img" src="images/click_here-removebg-preview.png" alt="click-here" />
+      </div>
+    </nav>
+
+    <main>
+      <div class="header-container">
+        <h1 id="header-greeting" class="header-greeting"></h1>
+        <span id="country">Macedonia</span>
+      </div>
+      <section id="date-wrapper" class="date-wrapper">
+        <div id="date-container" class="date-container"></div>
+      </section>
+      <div id="time-container" class="time-container">
+        <div id="hour" class="hour cursor-pointer box border-radius"></div>
+        <div id="minutes" class="minutes cursor-pointer box border-radius"></div>
+        <div id="seconds" class="seconds cursor-pointer box border-radius"></div>
+        <div id="meridian-time" class="meridian-time cursor-pointer box box-meridian border-radius">A.M.</div>
+      </div>
+    </main>
+
+    <script type="module" src="src/index.js"></script>
+  </body>
+</html>
