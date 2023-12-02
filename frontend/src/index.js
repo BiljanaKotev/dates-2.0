@@ -91,7 +91,7 @@ function getCountry() {
       return response.json();
     })
     .then((data) => {
-      country.innerHTML = ` ${data.geo.city} ${data.geo.country_name}`;
+      country ? (country.innerHTML = ` ${data.geo.city}, ${data.geo.country_name}`) : (country.innerHTML = 'Loading...');
     })
     .catch((error) => {
       console.error('Error', error.message);
